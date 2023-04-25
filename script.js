@@ -20,22 +20,47 @@ section.style.display ="grid"
 section.style.justifyContent = "center"
 section.style.alignItems= "center";
 section.style.width = "100%";
-section.style.gridtTemplateColumns = "repeat(auto-fit, minmax(250px, 3fr))"; 
+// section.style.gridtTemplateColumns = "repeat(auto-fit, minmax(250px, 3fr))"; 
 
-for (let i = 0; i < 3; i++) {
-    const column1 = document.createElement('div');
-    column1.style.display = 'flex';
-    column1.style.flexDirection = 'column';
-    column1.style.alignItems = 'center';
-    section.appendChild(column1);
+const column1 = document.createElement('div');
+column1.style.display = 'flex';
+column1.style.flexDirection = 'column';
+column1.style.alignItems = '';
+section.appendChild(column1);
+for (let j=0;  j<=9; j++){
+    const number = document.createElement('span');
+    number.textContent = j;
+    number.style.fontSize = '2rem';
+    column1.appendChild(number);
+
+const column2 = document.createElement('div');
+column2.style.display = 'flex';
+column2.style.flexDirection = 'column';
+column2.style.alignItems = 'center';
+
+section.appendChild(column2);
 }
-for let j=0;  j
 
-    // Skapa siffrorna i varje kolumn
-    // for (let j = 10; j >= 1; j--) {
-    //   const number = document.createElement('span');
-    //   number.textContent = j;
-    //   number.style.fontSize = '2rem';
-    //   column.appendChild(number);
-    // }
+
+const column3 = document.createElement('div');
+column3.style.display = 'flex';
+column3.style.flexDirection = 'column';
+column3.style.alignItems = 'center';
+section.appendChild(column3);
+
+// for (let i = 0; i < 3; i++) {
+    // const column1 = document.createElement('div');
+    // column1.style.display = 'flex';
+    // column1.style.flexDirection = 'column';
+    // column1.style.alignItems = 'center';
+    // section.appendChild(column1);
+
+// for (let j=0;  j<=9; j++){
+    // const number = document.createElement('span');
+    // number.textContent = j;
+    // number.style.fontSize = '2rem';
+    // column1.appendChild(number);
+// }
+// }
+
   
