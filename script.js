@@ -118,8 +118,14 @@ for (let i=0; i<text.length; i++){
     paragraph.style.fontSize = '1.5rem';
     paragraph.style.textAlign = 'right';
     paragraph.style.margin = '0'; 
-    column3.append(paragraph) 
-    if (i==='sex'){
-        paragraph.Color = 'hsl(240, 71%, 80%)'
+
+    if( i===5){
+        paragraph.style.backgroundColor = 'hsl(240, 71%, 80%)';
     }
+
+    else if (i % 2 === 0) { 
+        paragraph.style.backgroundColor = 'black';
+        paragraph.style.color = 'white';
+    }
+    column3.append(paragraph)
 }
