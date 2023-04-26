@@ -1,66 +1,53 @@
+// skapar en container 
 const container = document.createElement('container');
 document.body.append(container);
 
+ 
 for(let i=1; i<=5; i++){
     const div = document.createElement('div');
     container.append(div);
     div.innerText = `Rad ${i}`;
-    div.style.fontSize = `${10*i}px`
-    div.style.display ="flex"
-    div.style.justifyContent = "center"
-    div.style.margin = `${5*i}px 0`
+    div.style.fontSize = `${10*i}px`;
+    div.style.display ="flex";
+    div.style.justifyContent = "center";
+    div.style.margin = `${5*i}px 0`;
     div.style.color = `hsl(240, 90%, 70%)`;
     div.style.backgroundColor = `hsl(${120+(i*15)}, 90%, 85%)`;
 }
-
+//skapar en section 
 const section = document.createElement('section');
 document.body.append(section);
-section.style.border = '2px solid black'
-section.style.display ="grid"
-section.style.justifyContent = "center"
-section.style.alignItems= "center";
+section.style.border = '2px solid black';
 section.style.width = "100%";
-// section.style.gridtTemplateColumns = "repeat(auto-fit, minmax(250px, 3fr))"; 
 
-const column1 = document.createElement('div');
-column1.style.display = 'flex';
-column1.style.flexDirection = 'column';
-column1.style.alignItems = '';
-section.appendChild(column1);
+//skapa kort
+const card1 = document.createElement('div');
+section.appendChild(card1);
+card1.style.width = '100px'
+card1.style.display = 'flex';
+card1.style.justifyContent = 'center';
+card1.style.backgroundColor = 'hsl(240, 71%, 80%)';
+
+//skapa column i kort
+const column1 =  document.createElement('div');
+card1.appendChild(column1);
+column1.style.backgroundColor = 'white'
+column1.style.width = '70px'
+column1.style.margin = '10px '
+
+//numren
 for (let j=0;  j<=9; j++){
-    const number = document.createElement('span');
-    number.textContent = j;
-    number.style.fontSize = '2rem';
-    column1.appendChild(number);
-
-const column2 = document.createElement('div');
-column2.style.display = 'flex';
-column2.style.flexDirection = 'column';
-column2.style.alignItems = 'center';
-
-section.appendChild(column2);
+const number = document.createElement('div');
+number.textContent = j;
+number.style.fontSize = '1.5rem';
+number.style.display = 'flex';
+number.style.flexDirection = 'column'; 
+number.style.justifyContent = 'center';
+column1.appendChild(number);
 }
 
 
-const column3 = document.createElement('div');
-column3.style.display = 'flex';
-column3.style.flexDirection = 'column';
-column3.style.alignItems = 'center';
-section.appendChild(column3);
 
-// for (let i = 0; i < 3; i++) {
-    // const column1 = document.createElement('div');
-    // column1.style.display = 'flex';
-    // column1.style.flexDirection = 'column';
-    // column1.style.alignItems = 'center';
-    // section.appendChild(column1);
 
-// for (let j=0;  j<=9; j++){
-    // const number = document.createElement('span');
-    // number.textContent = j;
-    // number.style.fontSize = '2rem';
-    // column1.appendChild(number);
-// }
-// }
 
   
