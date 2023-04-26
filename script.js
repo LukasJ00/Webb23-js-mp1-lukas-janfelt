@@ -35,6 +35,8 @@ column1.style.backgroundColor = 'white'
 column1.style.width = '70px'
 column1.style.margin = '10px '
 
+
+
 //numren
 for (let j=0;  j<=9; j++){
 const number = document.createElement('div');
@@ -43,11 +45,15 @@ number.style.fontSize = '1.5rem';
 number.style.display = 'flex';
 number.style.flexDirection = 'column'; 
 number.style.justifyContent = 'center';
-column1.appendChild(number);
+
+if (j === 4) {
+    number.style.backgroundColor = 'hsl(240, 71%, 80%)';
+  } else if (j % 2 === 0) {
+    number.style.backgroundColor = 'black';
+    number.style.color = 'white';
+  } else {
+    number.style.backgroundColor = 'white';
+  }
+  column1.appendChild(number);
 }
 
-
-
-
-
-  
