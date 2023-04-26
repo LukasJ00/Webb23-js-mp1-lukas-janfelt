@@ -18,25 +18,25 @@ for(let i=1; i<=5; i++){
 const section = document.createElement('section');
 document.body.append(section);
 section.style.border = '2px solid black';
-section.style.display ='flex'
-section.style.justifyContent = 'space-evenly'
+section.style.display ='flex';
+section.style.justifyContent = 'space-evenly';
 section.style.width = "100%";
 
 //kort 1
 const card1 = document.createElement('div');
 section.appendChild(card1);
-card1.style.width = '100px'
+card1.style.width = '100px';
 card1.style.display = 'flex';
 card1.style.justifyContent = 'center';
-card1.style.margin = '3rem'
+card1.style.margin = '3rem';
 card1.style.backgroundColor = 'hsl(240, 71%, 80%)';
 
 //kolumn 1 
 const column1 =  document.createElement('div');
 card1.appendChild(column1);
-column1.style.backgroundColor = 'white'
-column1.style.width = '70px'
-column1.style.margin = '10px'
+column1.style.backgroundColor = 'white';
+column1.style.width = '70px';
+column1.style.margin = '10px';
 
 //nummer loop
 for (let j=0;  j<=9; j++){
@@ -61,18 +61,18 @@ if (j === 4) {
 //kort 2
 const card2 = document.createElement('div');
 section.appendChild(card2);
-card2.style.width = '100px'
+card2.style.width = '100px';
 card2.style.display = 'flex';
 card2.style.justifyContent = 'center';
-card2.style.margin = '3rem'
+card2.style.margin = '3rem';
 card2.style.backgroundColor = 'hsl(240, 71%, 80%)';
 
 //kulumn 2 
 const column2 =  document.createElement('div');
 card2.appendChild(column2);
-column2.style.backgroundColor = 'white'
-column2.style.width = '70px'
-column2.style.margin = '10px'
+column2.style.backgroundColor = 'white';
+column2.style.width = '70px';
+column2.style.margin = '10px';
 
 //nummer loop
 for (let x=9;  x>=0; x--){
@@ -81,9 +81,10 @@ for (let x=9;  x>=0; x--){
     number.style.fontSize = '1.5rem';
     number.style.display = 'flex';
     number.style.flexDirection = 'column'; 
-    number.style.textAlign ='center'
+    number.style.textAlign ='center';
     if (x === 8) {
     number.style.backgroundColor = 'hsl(240, 71%, 80%)';
+    number.style.color = 'white';
     } else if (x % 2 === 0) {
     number.style.backgroundColor = 'black';
     number.style.color = 'white';
@@ -96,18 +97,18 @@ for (let x=9;  x>=0; x--){
 // kort 3
 const card3 = document.createElement('div');
 section.appendChild(card3);
-card3.style.width = '100px'
+card3.style.width = '100px';
 card3.style.display = 'flex';
 card3.style.justifyContent = 'center';
-card3.style.margin = '3rem'
+card3.style.margin = '3rem';
 card3.style.backgroundColor = 'hsl(240, 71%, 80%)';
 
 //kulumn 3
 const column3 =  document.createElement('div');
 card3.append(column3);
-column3.style.backgroundColor = 'white'
-column3.style.width = '70px'
-column3.style.margin = '10px'
+column3.style.backgroundColor = 'white';
+column3.style.width = '70px';
+column3.style.margin = '10px';
 
 //nummer array
 const text = ['ett', 'två', 'tre', 'fyra', 'fem', 'sex', 'sju', 'åtta', 'nio', 'tio'];
@@ -127,5 +128,5 @@ for (let i=0; i<text.length; i++){
         paragraph.style.backgroundColor = 'black';
         paragraph.style.color = 'white';
     }
-    column3.append(paragraph)
+    column3.append(paragraph);
 }
