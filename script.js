@@ -46,7 +46,6 @@ number.style.fontSize = '1.5rem';
 number.style.display = 'flex';
 number.style.flexDirection = 'column'; 
 
-
 if (j === 4) {
     number.style.backgroundColor = 'hsl(240, 71%, 80%)';
   } else if (j % 2 === 0) {
